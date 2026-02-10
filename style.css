@@ -324,13 +324,36 @@ a:hover {
 }
 
 .header__logo-img {
-    height: 50px;
+    height: 40px;
     width: auto;
     transition: height var(--transition-med);
 }
 
+.header__logo-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text-white);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transition: font-size var(--transition-med);
+}
+
+.header__logo-sc {
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
 .header--scrolled .header__logo-img {
-    height: 40px;
+    height: 32px;
+}
+
+.header--scrolled .header__logo-text {
+    font-size: 1rem;
+}
+
+.header--scrolled .header__logo-sc {
+    font-size: 1.2rem;
 }
 
 .header__nav {
@@ -1619,32 +1642,34 @@ a:hover {
     }
 
     .hero {
-        align-items: flex-start;
-        min-height: 100svh;
+        align-items: center;
+        justify-content: center;
+        height: 100svh;
+        min-height: auto;
     }
 
     .hero__content {
-        padding: 70px 20px 30px;
+        padding: 90px 24px 40px;
         max-width: 100%;
         box-sizing: border-box;
     }
 
     .hero__logo-wrapper {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
     }
 
     .hero__title {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
+        font-size: 1.75rem;
+        margin-bottom: 16px;
     }
 
     .hero__subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
     }
 
     .hero__logo {
-        width: clamp(180px, 55vw, 280px);
+        width: clamp(200px, 55vw, 320px);
     }
 
     .hero__cta {
