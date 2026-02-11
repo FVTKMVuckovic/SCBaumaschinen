@@ -44,7 +44,7 @@
 
     /* Spacing */
     --section-py: clamp(80px, 10vw, 140px);
-    --container-max: 1200px;
+    --container-max: 1400px;
     --container-px: clamp(20px, 5vw, 40px);
 
     /* Transitions */
